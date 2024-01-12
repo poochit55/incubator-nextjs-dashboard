@@ -1,4 +1,7 @@
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
+import { Lusitana } from "next/font/google";
+
+const lusitana = Lusitana( {weight:["400","700"]})
 
 
 export default function AcmeLogo() {
@@ -7,7 +10,7 @@ export default function AcmeLogo() {
       className="flex flex-row items-center leading-none text-white"
     >
       <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" />
-      <p className="text-[44px]">Acme</p>
+      <p className={`${lusitana.className} text-[44px]`}>Acme</p>
     </div>
   );
 }

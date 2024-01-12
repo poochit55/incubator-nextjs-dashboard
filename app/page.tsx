@@ -1,11 +1,13 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import AcmeLogo from "./ui/acme-logo";
+
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
-        {/* <AcmeLogo /> */}
+        <AcmeLogo />
       </div>
 
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
@@ -26,6 +28,8 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
+        <img src="/hero-desktop.png" alt="this desktop image" width={1000} height={760} className="hidden md:block"/>
+        <img src="/hero-mobile.png" alt="this mobile image" width={600} height={420} className="md:hidden block"/>
         </div>
       </div>
     </main>
